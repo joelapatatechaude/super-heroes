@@ -588,11 +588,11 @@ public class FightResourceIT {
     var expectedFight = new Fight();
     expectedFight.winnerName = "Chewbacca";
     expectedFight.winnerLevel = 5;
-    expectedFight.winnerPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/chewbacca--684239239428094811.jpg";
+    expectedFight.winnerPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/chewbacca--684239239428094811.jpg";
     expectedFight.winnerTeam = HEROES_TEAM_NAME;
     expectedFight.loserName = "Wanderer";
     expectedFight.loserLevel = 3;
-    expectedFight.loserPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/wanderer-300775911119209178.jpg";
+    expectedFight.loserPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/wanderer-300775911119209178.jpg";
     expectedFight.loserTeam = VILLAINS_TEAM_NAME;
 
 		var fight = get("/api/fights/{id}", getAndVerifyAllFights().get(0).id.toString())
@@ -792,27 +792,27 @@ public class FightResourceIT {
     var expectedFights = List.of(new Fight(), new Fight(), new Fight());
     expectedFights.get(0).winnerName = "Chewbacca";
     expectedFights.get(0).winnerLevel = 5;
-    expectedFights.get(0).winnerPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/chewbacca--684239239428094811.jpg";
+    expectedFights.get(0).winnerPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/chewbacca--684239239428094811.jpg";
     expectedFights.get(0).winnerTeam = HEROES_TEAM_NAME;
     expectedFights.get(0).loserName = "Wanderer";
     expectedFights.get(0).loserLevel = 3;
-    expectedFights.get(0).loserPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/wanderer-300775911119209178.jpg";
+    expectedFights.get(0).loserPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/wanderer-300775911119209178.jpg";
     expectedFights.get(0).loserTeam = VILLAINS_TEAM_NAME;
     expectedFights.get(1).winnerName = "Galadriel";
     expectedFights.get(1).winnerLevel = 10;
-    expectedFights.get(1).winnerPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/galadriel--1293733805363806029.jpg";
+    expectedFights.get(1).winnerPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/galadriel--1293733805363806029.jpg";
     expectedFights.get(1).winnerTeam = HEROES_TEAM_NAME;
     expectedFights.get(1).loserName = "Darth Vader";
     expectedFights.get(1).loserLevel = 8;
-    expectedFights.get(1).loserPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/anakin-skywalker--8429855148488965479.jpg";
+    expectedFights.get(1).loserPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/anakin-skywalker--8429855148488965479.jpg";
     expectedFights.get(1).loserTeam = VILLAINS_TEAM_NAME;
     expectedFights.get(2).winnerName = "Annihilus";
     expectedFights.get(2).winnerLevel = 23;
-    expectedFights.get(2).winnerPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/annihilus--751928780106678215.jpg";
+    expectedFights.get(2).winnerPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/annihilus--751928780106678215.jpg";
     expectedFights.get(2).winnerTeam = VILLAINS_TEAM_NAME;
     expectedFights.get(2).loserName = "Shikamaru";
     expectedFights.get(2).loserLevel = 1;
-    expectedFights.get(2).loserPicture = "https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/characterdata/images/nara-shikamaru-1970614934047311432.jpg";
+    expectedFights.get(2).loserPicture = "https://raw.githubusercontent.com/joelapatatechaude/super-heroes/characterdata/images/nara-shikamaru-1970614934047311432.jpg";
     expectedFights.get(2).loserTeam = HEROES_TEAM_NAME;
 
 		var fights = get("/api/fights")

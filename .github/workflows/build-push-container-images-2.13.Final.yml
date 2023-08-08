@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   build-jvm-images:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -106,7 +106,7 @@ jobs:
           image: "${{ env.IMAGE_BASE_NAME }}/${{ matrix.project }}:${{ env.CONTAINER_TAG }}"
 
   build-native-images:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -166,7 +166,7 @@ jobs:
           image: "${{ env.IMAGE_BASE_NAME }}/${{ matrix.project }}:${{ env.CONTAINER_TAG }}"
 
   build-ui-images:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -225,7 +225,7 @@ jobs:
           image: "${{ env.IMAGE_BASE_NAME }}/ui-super-heroes:${{ env.CONTAINER_TAG }}"
 
   push-app-images:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     needs:
       - build-jvm-images
       - build-native-images
@@ -307,7 +307,7 @@ jobs:
         run: "docker push -a ${{ env.IMAGE_BASE_NAME }}/${{ matrix.project }}"
 
   push-ui-images:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     needs:
       - build-jvm-images
       - build-native-images
@@ -370,7 +370,7 @@ jobs:
         run: "docker push -a ${{ env.IMAGE_BASE_NAME }}/ui-super-heroes"
 
   create-app-multiarch-manifests:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     needs: push-app-images
     runs-on: ubuntu-latest
     strategy:
@@ -431,7 +431,7 @@ jobs:
           docker manifest push ${{ env.IMAGE_BASE_NAME }}/${{ matrix.project }}:${{ env.CONTAINER_TAG }}
 
   create-ui-multiarch-manifests:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     needs: push-ui-images
     runs-on: ubuntu-latest
     steps:
@@ -485,22 +485,22 @@ jobs:
           docker manifest push ${{ env.IMAGE_BASE_NAME }}/ui-super-heroes:${{ env.CONTAINER_TAG }}
 
   deploy-resources-workflow-run:
-    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'quarkusio/quarkus-super-heroes')
+    if: (((github.event_name == 'workflow_dispatch') && (github.ref_name == '2.13.Final')) || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success') && (github.event.workflow_run.head_branch == '2.13.Final'))) && (github.repository == 'joelapatatechaude/super-heroes')
     needs:
       - create-app-multiarch-manifests
       - create-ui-multiarch-manifests
-    uses: quarkusio/quarkus-super-heroes/.github/workflows/create-deploy-resources.yml@main
+    uses: joelapatatechaude/super-heroes/.github/workflows/create-deploy-resources.yml@main
     secrets: inherit
     with:
       commit_id: ${{ github.event.workflow_run.head_commit.id }}
       branch: ${{ github.event.workflow_run.head_branch }}
 
   deploy-resources-workflow-dispatch:
-    if: ((github.event_name == 'workflow_dispatch') && (github.repository == 'quarkusio/quarkus-super-heroes')) && (github.ref_name == '2.13.Final')
+    if: ((github.event_name == 'workflow_dispatch') && (github.repository == 'joelapatatechaude/super-heroes')) && (github.ref_name == '2.13.Final')
     needs:
       - create-app-multiarch-manifests
       - create-ui-multiarch-manifests
-    uses: quarkusio/quarkus-super-heroes/.github/workflows/create-deploy-resources.yml@main
+    uses: joelapatatechaude/super-heroes/.github/workflows/create-deploy-resources.yml@main
     secrets: inherit
     with:
       commit_id: ${{ github.sha }}

@@ -53,7 +53,7 @@ If you use different computers to contribute, please make sure the name is the s
 We may use this information to acknowledge your contributions in release announcements.
 
 ### Discuss non-trivial contribution ideas with committers
-If you're considering anything more than correcting a typo or fixing a minor bug, please discuss it by [creating an issue on our issue tracker](https://github.com/quarkusio/quarkus-super-heroes/issues?q=is%3Aissue) before submitting a pull request. We're happy to provide guidance but please spend an hour or two researching the subject on your own including searching the forums for prior discussions.
+If you're considering anything more than correcting a typo or fixing a minor bug, please discuss it by [creating an issue on our issue tracker](https://github.com/joelapatatechaude/super-heroes/issues?q=is%3Aissue) before submitting a pull request. We're happy to provide guidance but please spend an hour or two researching the subject on your own including searching the forums for prior discussions.
 
 ### Create your branch from main
 Create your topic branch to be submitted as a pull request from `main`.

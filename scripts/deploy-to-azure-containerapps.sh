@@ -347,7 +347,7 @@ done
 # Define variables
 # Other
 TEMP_DIR=$(mktemp -d)
-GITHUB_RAW_BASE_URL="https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/main"
+GITHUB_RAW_BASE_URL="https://raw.githubusercontent.com/joelapatatechaude/super-heroes/main"
 SUPERHEROES_IMAGES_BASE="quay.io/quarkus-super-heroes"
 TAG_SYSTEM=quarkus-super-heroes
 

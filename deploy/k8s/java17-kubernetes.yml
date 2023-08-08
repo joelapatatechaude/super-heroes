@@ -57,7 +57,7 @@ data:
   get-data.sh: |-
     #!/bin/bash
 
-    curl https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/main/rest-villains/deploy/db-init/initialize-tables.sql --output /docker-entrypoint-initdb.d/1-init-tables.sql
+    curl https://raw.githubusercontent.com/joelapatatechaude/super-heroes/main/rest-villains/deploy/db-init/initialize-tables.sql --output /docker-entrypoint-initdb.d/1-init-tables.sql
 ---
 apiVersion: v1
 kind: Service
@@ -82,7 +82,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "villains-db,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:55:23 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -115,7 +115,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "villains-db,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:55:23 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -142,7 +142,7 @@ spec:
       annotations:
         app.openshift.io/connects-to: "villains-db,otel-collector"
         app.quarkus.io/vcs-ref: main
-        app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
         app.quarkus.io/build-timestamp: 2023-08-03 - 16:55:23 +0000
         prometheus.io/scrape: "true"
         prometheus.io/path: /q/metrics
@@ -324,7 +324,7 @@ data:
   get-data.sh: |-
     #!/bin/bash
 
-    curl https://raw.githubusercontent.com/quarkusio/quarkus-super-heroes/main/rest-heroes/deploy/db-init/initialize-tables.sql --output /docker-entrypoint-initdb.d/1-init-tables.sql
+    curl https://raw.githubusercontent.com/joelapatatechaude/super-heroes/main/rest-heroes/deploy/db-init/initialize-tables.sql --output /docker-entrypoint-initdb.d/1-init-tables.sql
 ---
 apiVersion: v1
 kind: Service
@@ -349,7 +349,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "heroes-db,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:55:46 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -382,7 +382,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "heroes-db,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:55:46 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -409,7 +409,7 @@ spec:
       annotations:
         app.openshift.io/connects-to: "heroes-db,otel-collector"
         app.quarkus.io/vcs-ref: main
-        app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
         app.quarkus.io/build-timestamp: 2023-08-03 - 16:55:46 +0000
         prometheus.io/scrape: "true"
         prometheus.io/path: /q/metrics
@@ -665,7 +665,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "fights-db,fights-kafka,apicurio,rest-villains,rest-heroes,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:56:18 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -698,7 +698,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "fights-db,fights-kafka,apicurio,rest-villains,rest-heroes,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:56:18 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -725,7 +725,7 @@ spec:
       annotations:
         app.openshift.io/connects-to: "fights-db,fights-kafka,apicurio,rest-villains,rest-heroes,otel-collector"
         app.quarkus.io/vcs-ref: main
-        app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
         app.quarkus.io/build-timestamp: 2023-08-03 - 16:56:18 +0000
         prometheus.io/scrape: "true"
         prometheus.io/path: /q/metrics
@@ -1012,7 +1012,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "fights-kafka,apicurio,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:56:41 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -1045,7 +1045,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "fights-kafka,apicurio,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:56:41 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -1072,7 +1072,7 @@ spec:
       annotations:
         app.openshift.io/connects-to: "fights-kafka,apicurio,otel-collector"
         app.quarkus.io/vcs-ref: main
-        app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
         app.quarkus.io/build-timestamp: 2023-08-03 - 16:56:41 +0000
         prometheus.io/scrape: "true"
         prometheus.io/path: /q/metrics
@@ -1261,7 +1261,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "rest-fights,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:57:03 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -1294,7 +1294,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "rest-fights,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:57:03 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -1321,7 +1321,7 @@ spec:
       annotations:
         app.openshift.io/connects-to: "rest-fights,otel-collector"
         app.quarkus.io/vcs-ref: main
-        app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
         app.quarkus.io/build-timestamp: 2023-08-03 - 16:57:03 +0000
         prometheus.io/scrape: "true"
         prometheus.io/path: /q/metrics
@@ -1391,7 +1391,7 @@ metadata:
   annotations:
     app.openshift.io/connects-to: "rest-fights,otel-collector"
     app.quarkus.io/vcs-ref: main
-    app.quarkus.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.quarkus.io/vcs-url: https://github.com/joelapatatechaude/super-heroes
     app.quarkus.io/build-timestamp: 2023-08-03 - 16:57:03 +0000
   labels:
     app: ui-super-heroes

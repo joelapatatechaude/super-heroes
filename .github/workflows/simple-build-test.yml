@@ -46,7 +46,7 @@ concurrency:
 jobs:
   jvm-build-test:
     runs-on: ubuntu-latest
-    if: github.repository == 'quarkusio/quarkus-super-heroes'
+    if: github.repository == 'joelapatatechaude/super-heroes'
     strategy:
       fail-fast: false
       matrix:
@@ -78,7 +78,7 @@ jobs:
 
   native-build-test:
     runs-on: ubuntu-latest
-    if: github.repository == 'quarkusio/quarkus-super-heroes'
+    if: github.repository == 'joelapatatechaude/super-heroes'
     strategy:
       fail-fast: false
       matrix:
