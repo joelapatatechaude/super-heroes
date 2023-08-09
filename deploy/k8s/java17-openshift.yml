@@ -134,21 +134,21 @@ spec:
   tags:
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-villains:java11-latest
+        name: quay.io/joelapatatechaude/a-rest-villains:123456
       importPolicy: {}
       name: java11-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-villains:java17-latest
+        name: quay.io/joelapatatechaude/a-rest-villains:123456
       importPolicy: {}
       name: java17-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-villains:native-latest
+        name: quay.io/joelapatatechaude/a-rest-villains:123456
       importPolicy: {}
       name: native-latest
       referencePolicy:
@@ -323,7 +323,7 @@ spec:
           - rest-villains
         from:
           kind: ImageStreamTag
-          name: rest-villains:java17-latest
+          name: rest-villains:123456
       type: ImageChange
 ---
 apiVersion: route.openshift.io/v1
@@ -481,21 +481,21 @@ spec:
   tags:
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-heroes:java11-latest
+        name: quay.io/joelapatatechaude/a-rest-heroes:123456
       importPolicy: {}
       name: java11-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-heroes:java17-latest
+        name: quay.io/joelapatatechaude/a-rest-heroes:123456
       importPolicy: {}
       name: java17-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-heroes:native-latest
+        name: quay.io/joelapatatechaude/a-rest-heroes:123456
       importPolicy: {}
       name: native-latest
       referencePolicy:
@@ -671,7 +671,7 @@ spec:
           - rest-heroes
         from:
           kind: ImageStreamTag
-          name: rest-heroes:java17-latest
+          name: rest-heroes:123456
       type: ImageChange
 ---
 apiVersion: route.openshift.io/v1
@@ -877,21 +877,21 @@ spec:
   tags:
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-fights:java11-latest
+        name: quay.io/joelapatatechaude/a-rest-fights:123456
       importPolicy: {}
       name: java11-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-fights:java17-latest
+        name: quay.io/joelapatatechaude/a-rest-fights:123456
       importPolicy: {}
       name: java17-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-fights:native-latest
+        name: quay.io/joelapatatechaude/a-rest-fights:123456
       importPolicy: {}
       name: native-latest
       referencePolicy:
@@ -1156,7 +1156,7 @@ spec:
           - rest-fights
         from:
           kind: ImageStreamTag
-          name: rest-fights:java17-latest
+          name: rest-fights:123456
       type: ImageChange
 ---
 apiVersion: route.openshift.io/v1
@@ -1325,21 +1325,21 @@ spec:
   tags:
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/event-statistics:java11-latest
+        name: quay.io/joelapatatechaude/a-event-statistics:123456
       importPolicy: {}
       name: java11-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/event-statistics:java17-latest
+        name: quay.io/joelapatatechaude/a-event-statistics:123456
       importPolicy: {}
       name: java17-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/event-statistics:native-latest
+        name: quay.io/joelapatatechaude/a-event-statistics:123456
       importPolicy: {}
       name: native-latest
       referencePolicy:
@@ -1568,7 +1568,7 @@ spec:
           - event-statistics
         from:
           kind: ImageStreamTag
-          name: event-statistics:java17-latest
+          name: event-statistics:123456
       type: ImageChange
 ---
 apiVersion: route.openshift.io/v1
@@ -1675,14 +1675,14 @@ spec:
   tags:
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/ui-super-heroes:java17-latest
+        name: quay.io/joelapatatechaude/ui-super-heroes:123456
       importPolicy: {}
       name: java17-latest
       referencePolicy:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/ui-super-heroes:native-latest
+        name: quay.io/joelapatatechaude/ui-super-heroes:123456
       importPolicy: {}
       name: native-latest
       referencePolicy:
